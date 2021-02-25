@@ -42,17 +42,17 @@ for(var i = 0; i < div.length; i++){
 for(let i = 0; i < div.length; i++){
 	div[i].addEventListener("click", function(e){
 		if(e.target.classList.contains("more")){
-      e.target.remove();
-      div[i].querySelector("p").textContent = originalText[i];
-      lessAnchor(div[i]);
-    }
-  });
+      			e.target.remove();
+      			div[i].querySelector("p").textContent = originalText[i];
+      			lessAnchor(div[i]);
+    		}
+  	});
 }
 // Event listener for less
 document.body.addEventListener("click", function(e){
 	if(e.target.classList.contains("less")){
-    e.target.parentNode.querySelector("p").textContent = e.target.parentNode.querySelector("p").textContent.substring(0, textTruncateLength);
-    moreAnchor(e.target.parentNode);
-    e.target.parentNode.querySelector("a.less").remove();
-  }
+    		e.target.parentNode.querySelector("p").textContent = e.target.parentNode.querySelector("p").textContent.substring(0, textTruncateLength);
+    		moreAnchor(e.target.parentNode);
+    		e.target.parentNode.querySelector("a.less").remove();
+  	}
 });
