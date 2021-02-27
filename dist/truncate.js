@@ -2,19 +2,19 @@
 truncate(400);
 function truncate(length){
   // Variable for saving the original content
-  var originalText = [];
+  let originalText = [];
   // Saving the original content for later use
-  for(var i = 0; i < document.getElementsByClassName('truncate').length; i++){
+  for(let i = 0; i < document.getElementsByClassName('truncate').length; i++){
     originalText[i] = document.getElementsByClassName('truncate')[i].querySelector('p').textContent;
   }
   // Truncate
-  for(var i = 0; i < document.getElementsByClassName("truncate").length; i++){
+  for(let i = 0; i < document.getElementsByClassName("truncate").length; i++){
   	document.getElementsByClassName("truncate")[i].querySelector("p").textContent = document.getElementsByClassName("truncate")[i].querySelector("p").textContent.substring(0, length);
   	moreAnchor(document.getElementsByClassName("truncate")[i]);
   }
   // More anchor
   function moreAnchor(text){
-      var moreAnchor = document.createElement("a");
+      let moreAnchor = document.createElement("a");
       moreAnchor.setAttribute("href", "javascript:void(0)");
       moreAnchor.setAttribute("class", "more");
       moreAnchor.textContent = " ... more";
@@ -23,7 +23,7 @@ function truncate(length){
   }
   // Less anchor
   function lessAnchor(text){
-      var lessAnchor = document.createElement("a");
+      let lessAnchor = document.createElement("a");
       lessAnchor.setAttribute("href", "javascript:void(0);");
       lessAnchor.setAttribute("class", "less");
       lessAnchor.textContent = "Less";
