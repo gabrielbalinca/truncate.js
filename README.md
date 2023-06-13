@@ -9,11 +9,14 @@
 * First parameter of the class represent the class of the div that contains the text we want to truncate ( `truncateTag` )
 * The div must contain only one paragraph tag.
 * Second parameter of the class represents the amount of caracters that should be displayed ( `truncateLength` )
->`const truncate = new Truncate(truncateTag, truncatelength)`
+
+```javascript
+var truncate = new Truncate(truncateTag, truncatelength)
+```
 
 ### Example :
 
-```
+```javascript
 <div class="truncate">
     <p>Lorem ipsum dolor sit amet, consectetur
         adipiscing elit, sed do eiusmod tempor
@@ -37,6 +40,6 @@
     // truncate is the tag of the div we want to truncate
     // second parameter is the length of the text that 
     // is displayed
-    const truncate = new Truncate('truncate', 400);
+    var truncate = new Truncate('truncate', 400);
 </script>
 ```
