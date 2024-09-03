@@ -4,7 +4,7 @@
 * Doesn't require JQuery library
 * You can style the anchors through more and less classes
 
-### Usage
+# Usage
 
 * First parameter of the class represent the class of the div that contains the text we want to truncate ( `truncateTag` )
 * The div must contain only one paragraph tag.
